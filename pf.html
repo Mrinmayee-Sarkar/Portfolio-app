@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mrinmayee Sarkar-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="pf.js"></script>
+  <script src="https://kit.fontawesome.com/a83e1a7142.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="handleClose()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="handleMenu()"></i>
+      </nav>
+      <div id="img">
+        <img class="image" src="Images/Mrinmayee.jpg" alt="Mrinmayee" />
+      </div>
+      <div id="text">
+        <h2>Full Stack Developer</h2>
+        <div>Mrinmayee Sarkar</div>
+        <p>I am a highly motivated, passionate and self- taught full stack developer, seeking an entry-level position
+          to leverage <br> my skills in front-end and back-end development. I possess a deep understanding of
+          programming concepts and<br> algorithms, and I am passionate about using these skills to solve complex
+          problems. Web development has offered<br> me an engaging challenge to continually learn and improve my
+          skills in creating high-quality applications. I am eager<br> to gain practical experience and contribute
+          to dynamic projects and continue learning in a professional environment.</p>
+      </div>
+      <div class="titles">
+        <p class="links active-link" onclick="openLink('skills')">Skills</p>
+        <p class="links" onclick="openLink('education')">Education</p>
+      </div>
+      <div class="content active-content" id="skills">
+        <ul>
+          <li><span>Front-End</span><br> HTML, CSS, JavaScript, React.js, Redux, JQuery</li>
+          <li><span>Back-End</span><br>Django, Nodejs</li>
+          <li><span>Database</span><br>MySQL </li>
+          <li><span>Control</span><br> Git, GitHub</li>
+          <li><span>Programming Language</span><br> Python, C language</li>
+        </ul>
+      </div>
+      <div class="content" id="education">
+        <ul>
+          <li><span>2022</span><br>KRG GIRLS COLLEGE BCOM<span> 6.9 CGPA</span></li>
+          <li><span>2020</span><br>Makhanlal Chaturvedi National University Of Journalism And Communication, Bhopal
+            Diploma In Computer Applications <span> 8.50 CGPA</span></li>
+          <li><span>2019</span><br>CBSE BOARD 12th<span> 9.0 CGPA</span></li>
+          <li><span>2017</span><br>CBSE BOARD 10th<span> 9.6 CGPA</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="title">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="Images/Medassist.png" alt="MedAssist">
+          <div class="link">
+            <h2>MedAssist App</h2>
+            <p>Our advanced online clinical checkup app enable users to consult with their respective doctor from the
+              comfort of their home.</p>
+            <a href="https://github.com/Mrinmayee-Sarkar/MedAssist-App" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="pg1.html"><input type="button" value="Read More"></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Images/TextCrafty.png" alt="TextCrafty">
+          <div class="link">
+            <h2>Text Crafty App</h2>
+            <p>Our advanced text enhancer app is designed to enhance your writing effortlessly, making every word count.
+            </p>
+            <a href="https://github.com/Mrinmayee-Sarkar/Text-Crafty" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="pg1.html"> <input type="button" value="Read More"></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Images/newswave.jpeg" alt="NewsWave">
+          <div class="link">
+            <h2>News Wave App</h2>
+            <p>Developed a dynamic news application using React and integrated the News API for real-time content
+              updates.</p>
+            <a href="https://github.com/Mrinmayee-Sarkar/News-Wave" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="pg1.html"> <input type="button" value="Read More"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skill">
+    <div class="container">
+      <h1 class="skltitle">Skills</h1>
+
+      <div class="icons">
+        <div class="fnd">
+          <div class="fnt">
+            <h2>FrontEnd Skills</h2>
+          </div>
+          <p> <i class="fa-brands fa-js"></i>JavaScript</p>
+          <p><i class="fa-brands fa-html5"></i>HTML </p>
+          <p> <i class="fa-brands fa-css3-alt"></i>CSS</p>
+          <p> <i class="fa-brands fa-react"></i>ReactJS</p>
+          <p><img src="Images/Jquery.png">JQuery
+          <p>
+        </div>
+
+        <div class="bnd">
+          <h2>BackEnd Skills</h2>
+          <p><img src="Images/Django.png">Django </p>
+          <p> <i class="fa-brands fa-node-js"></i>Nodejs</p>
+        </div>
+        <div class="pl">
+          <h2>Programming Languages</h2>
+          <p><i class="fa-brands fa-python"></i>Python</p>
+          <p><i class="fa-solid fa-copyright"></i>C Language</p>
+        </div>
+        <div class="pl">
+          <h2>Database</h2>
+          <p><img src="Images/mysql.png">MySQL</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-phone"></i> 9039575229</p>
+          <p><i class="fa-solid fa-envelope"></i>mrinmayee.sarkar23@gmail.com</p>
+          <a href="https://github.com/Mrinmayee-Sarkar">
+            <div><i class="fa-brands fa-github"></i>https://github.com/Mrinmayee-Sarkar </i></div>
+          </a>
+        </div>
+        <div class="right">
+          <form name="'submit-to-google-sheet'">
+            <input type="text" name="Name" placeholder="Enter Your Name" required><br>
+            <input type="text" name="Email" placeholder="Enter Your E-mail" required><br>
+            <textarea name="Message" placeholder="Your Message" rows="10" required></textarea>
+            <button class="btn btn" type="submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw9m2YuSTWSXFFqlRhUmj8bmBCoFopSe48GErRHAbFV9oevAIinTPbmwfXQlSjZQy8RLg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
