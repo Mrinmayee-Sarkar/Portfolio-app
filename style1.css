@@ -1,9 +1,9 @@
-*{
-font-family: 'Times New Roman', Times, serif;
-box-sizing: border-box;
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     color: aliceblue;
     background-size: cover;
@@ -11,7 +11,7 @@ body{
     background-position: center;
 }
 
-.p ul li{
+.p ul li {
     font-size: 20px;
     margin-top: 10px;
 }

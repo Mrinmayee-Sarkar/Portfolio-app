@@ -205,7 +205,7 @@ nav ul li a:hover::after {
     background-color: black;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 .project:hover img {
@@ -253,7 +253,7 @@ nav ul li a:hover::after {
 .icons img {
     width: 50px;
     margin-top: 30px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
 
 .bnd {
