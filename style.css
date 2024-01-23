@@ -347,7 +347,7 @@ gap: 2vw;
 .left p i {
   margin-top: 0.65vw;
   margin-right:0.65vw;
-  font-size: 25px;
+  font-size: 1.62vw;
 }
 
 .left div i {
@@ -611,12 +611,13 @@ form .btn {
 
   .title {
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 9vw;
   }
 
   .sub-title {
-    font-size: 30px;
+    font-size: 9vw;
     font-weight: bolder;
+    margin-top: 10vw;
   }
 
   .left,
@@ -630,6 +631,17 @@ form .btn {
 
   .row {
     display: block;
+  }
+  .left div i {
+    margin-top: 3vw;
+    margin-right: 0.65vw;
+    font-size: 5vw;
+  }
+
+  .left p i {
+    margin-top: 3vw;
+    margin-right:0.65vw;
+    font-size: 5vw;
   }
 
   form input,
