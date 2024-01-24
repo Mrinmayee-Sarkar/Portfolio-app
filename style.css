@@ -50,7 +50,7 @@ body {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: large;
+  font-size: 1.25vw;
   position: relative;
 }
 
@@ -240,42 +240,47 @@ gap: 2vw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 2.60vw;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.97vw;
   transition: height 0.5s;
 }
 
-.link h2 {
+.link h3 {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0.1vw;
+}
+
+.link p{
+  font-size: 1.3vw;
 }
 
 .link a {
-  margin-top: 20px;
+  margin-top: 1.30vw;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.17vw;
   background: white;
-  width: 50px;
-  height: 50px;
+  width: 3.25vw;
+  height: 3.25vw;
   border-radius: 50%;
 }
 
 .link a i {
   color: #ff004f;
   text-align: center;
-  line-height: 50px;
+  line-height: 3.25vw;
 }
 
 .link button {
   color: whitesmoke;
-  margin-top: 20px;
+  margin-top: 1.30vw;
   background-color: black;
   justify-content: center;
   align-items: center;
-  width: 8.5vw;
+  width: 8vw;
   padding: 0.6vw 2vw;
-    border-radius: 5%;
+  border-radius: 5%;
+  font-size: 0.75vw;
 }
 
 .project:hover img {
@@ -304,6 +309,7 @@ gap: 2vw;
   padding: 1.30vw;
   border: 1px solid #888;
   width: 60%; 
+  height: auto;
 }
 
 .modal-content p{
@@ -311,15 +317,57 @@ gap: 2vw;
 }
 
 /* The Close Button */
-.close {
+.close1 {
   color: whitesmoke;
   float: right;
   font-size: 1.82vw;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close1:focus {
+  color:beige;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: whitesmoke;
+  float: right;
+  font-size: 1.82vw;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color:beige;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  color: whitesmoke;
+  float: right;
+  font-size: 1.82vw;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color:beige;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4 {
+  color: whitesmoke;
+  float: right;
+  font-size: 1.82vw;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
   color:beige;
   text-decoration: none;
   cursor: pointer;
@@ -429,7 +477,7 @@ form .btn {
     background: #4b4b4b;
     position: fixed;
     top: 0;
-    right: -49vw;
+    right: -65vw;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
@@ -585,16 +633,34 @@ form .btn {
     transition: height 0.5s;
   }
 
+  .link a {
+    margin-top: 1.30vw;
+    text-decoration: none;
+    font-size: 1.17vw;
+    background: white;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+  }
+  
+  .link a i {
+    color: #ff004f;
+    text-align: center;
+    line-height: 9vw;
+    font-size:4vw ;
+  }
+  
   
   .link button {
     color: whitesmoke;
-    margin-top: 20px;
+    margin-top: 1.30vw;
     background-color: black;
     justify-content: center;
     align-items: center;
     width: 30vw;
     padding: 2vw 4vw;
     border-radius: 10%;
+    font-size:3vw ;
   }
   
   .project:hover img {
@@ -605,8 +671,79 @@ form .btn {
     height: 100%;
   }
 
+  .link p{
+    font-size: 3.5vw;
+  }
+  
+
+  .close1 {
+    color: whitesmoke;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color:beige;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close2 {
+    color: whitesmoke;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color:beige;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close3 {
+    color: whitesmoke;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color:beige;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close4 {
+    color: whitesmoke;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .close4:hover,
+  .close4:focus {
+    color:beige;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content {
+    background-color: black;
+     margin: 15% auto; 
+    padding: 1.30vw;
+    border: 1px solid #888;
+    width: 90%; 
+    height: auto;
+  }
+
   .modal-content p{
-    line-height: 1vw;
+    line-height: 7vw;
+    width: 100%; 
   }
 
   .title {
