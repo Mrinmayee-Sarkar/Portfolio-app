@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;;
   color: #fff;
   box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ gap: 2vw;
 
 .intro{
   display: flex;
-  padding: 7vw;
+  padding: 8vw;
 }
 
 .img{
@@ -105,17 +105,87 @@ gap: 2vw;
 }
 
 .text{
-  margin-top:3.5vw ;
+  margin-top:6vw ;
   margin-left: 6.5vw;
 }
-.text h2 {
-  font-size: 2.9vw;
+
+.text .animate{
+  display: flex;
+  position: relative;
+  transition: .3s all ease;
+}
+.animate span{
+  font-size: 2.5vw;
+  margin-top: 0.5vw;
+  font-weight: bolder;
 }
 
+.animate ul  {
+  list-style: none;
+  font-size: 2.3vw;
+  margin-left: 1vw;
+  
+}
+
+.anime li{
+  padding: 0 0.65vw;
+  height: 2.92vw;
+  margin-bottom: 2.92vw;
+  display: block;
+}
+
+
+.animate div{
+  overflow: hidden;
+  position: relative;
+  height: 5vw;
+  margin-top: -0.65vw;
+}
+
+.anime{
+  -webkit-animation: anime 5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: anime 5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes anime{
+  0%{
+      margin-top: -360px;
+  }
+  5%{
+    margin-top: -270px;
+}
+  25%{
+  margin-top: -270px;
+}
+  30%{
+  margin-top: -180px;
+}
+  50%{
+  margin-top: -180px;
+}
+55%{
+  margin-top: -90px;
+}
+75%{
+  margin-top: -90px;
+}
+80%{
+  margin-top: 0px;
+}
+99.99%{
+  margin-top: 0px;
+}
+100%{
+  margin-top: -270px;
+}
+
+}
+
+
 .text p{
-  margin-top: 1vw;
-  font-size: 1.4vw;
-  width: 65%;
+  margin-top: 0.4vw;
+  font-size: 1.2vw;
+  width: 60%;
   color: beige;
   line-height: 1.5;
   font-weight: 500;
@@ -133,15 +203,15 @@ gap: 2vw;
 
 /********************Start of About section*************************************************/
 #about {
-  padding: 1.8vw 0;
+  padding: 2vw 0;
 }
 
 #about p {
   font-size: 1.6vw;
   margin-top: 1.69vw;
-  width: 90%;
+  width: 50%;
   line-height: 1.5;
-  color:beige;
+  color:white
 }
 
 .titles {
@@ -379,6 +449,7 @@ gap: 2vw;
 
 .row {
   display: flex;
+  margin-top: 10vw;
 }
 
 .right {
