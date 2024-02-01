@@ -77,12 +77,19 @@ nav .fa-solid {
   display: flex;
 margin-left: -10vw;
 gap: 2vw;
+
 }
 .socialmedia img{
   background-color: white;
   width: 1.5vw;
+  transition: all;
 }
 
+img:hover{
+  height:3vw ;
+  width: 3vw;
+
+}
 /*********************Start of Home section***************************************************/
 
 .intro{
@@ -239,6 +246,12 @@ gap: 2vw;
 .icons img{
 width: 4vw;
 height: 4vw;
+transition: all;
+}
+
+.imgicon:hover{
+width: 7vw ;
+height: 6.5;
 }
 
 /*********************Start of Portfolio section***************************************************/
