@@ -5,103 +5,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mrinmayee Sarkar-Portfolio</title>
-  <link 
-  href=<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href=<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="pf.js"></script>
   <script src="https://kit.fontawesome.com/a83e1a7142.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
 
 <body>
   <div id="header">
     <div class="container">
- <!-----------------------Start of Navbar--------------------------------------------------------->
+      <!-----------------------Start of Navbar--------------------------------------------------------->
       <nav class="nav">
-       <div class="logo"> Mrinmayee</div>
-          <div class="ul">
-        <ul id="menu">
-          <div class="li">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <div class="logo"> Mrinmayee</div>
+        <div class="ul">
+          <ul id="menu">
+            <div class="li">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </div>
+            <i class="fa-solid fa-xmark" onclick="handleClose()"></i>
+          </ul>
         </div>
-        <i class="fa-solid fa-xmark" onclick="handleClose()"></i>
-        </ul>
-      </div>
-    <div class="menuicon">
-        <i class="fa-solid fa-bars" onclick="handleMenu()"></i>
-      </div>
-    <div class="socialmedia">
-      <a href="https://github.com/Mrinmayee-Sarkar"><img src="Images/github.png" ></a>
-      <a href="https://www.linkedin.com/in/mrinmayee-sarkar-5016922ab/"><img src="Images/linkedin.png"></a>
-      <a href="https://twitter.com/Mrinmxyee"><img src="Images/twitter.png" ></a>
-      <a href="https://www.facebook.com/mrinmayee.sarkar.750/"><img src="Images/facebook-logo.png"></a>
-       </div>
+        <div class="menuicon">
+          <i class="fa-solid fa-bars" onclick="handleMenu()"></i>
+        </div>
+        <div class="socialmedia">
+          <a href="https://github.com/Mrinmayee-Sarkar"><img src="Images/github.png"></a>
+          <a href="https://www.linkedin.com/in/mrinmayee-sarkar-5016922ab/"><img src="Images/linkedin.png"></a>
+          <a href="https://twitter.com/Mrinmxyee"><img src="Images/twitter.png"></a>
+          <a href="https://www.facebook.com/mrinmayee.sarkar.750/"><img src="Images/facebook-logo.png"></a>
+        </div>
       </nav>
       <!-----------------------End of Navbar--------------------------------------------------------->
 
       <!-----------------------Start of Home section--------------------------------------------------------->
 
       <div class="intro">
-      <div class="img">  <img class="image" src="Images/Me-removebg-preview.jpg" alt="Mrinmayee" /></div>
-      <div class="text">
-        <h2>Hello!</h2>
-        <div class="animate">
-          <span>I'm</span>
-          <div>
-            <ul  class="anime">
-              <li>a Freelancer</li>
-              <li>a Programmer</li>
-              <li>a Full Stack Developer</li>
-              <li>a Creator</li>
-            </ul>
+        <div class="img"> <img class="image" src="Images/Me-removebg-preview.jpg" alt="Mrinmayee" /></div>
+        <div class="text">
+          <h2>Hello!</h2>
+          <div class="animate">
+            <span>I'm</span>
+            <div>
+              <ul class="anime">
+                <li>a Freelancer</li>
+                <li>a Programmer</li>
+                <li>a Creator</li>
+                <li>a Full Stack Developer </li>
+              </ul>
+            </div>
           </div>
+
+          <p>As soon as <span>'hello world'</span> materialized in the console of my first application, I sensed an
+            undeniable
+            connection to the vast universe of web development.</p>
         </div>
-        
-        <p>As soon as <span>'hello world'</span> materialized in the console of my first application, I sensed an undeniable
-           connection to the vast universe of web development.</p>
-      </div>
-    </div>
-    </div>
-  </div>
-<!-----------------------Start of About section--------------------------------------------------------->
-      <div id="about">
-        <div class="container">
-        <h1 class="title">About Me</h1>
-        <p>I am a highly motivated, passionate and self- taught full stack developer, seeking an entry-level position
-          to leverage my skills in front-end and back-end development. I possess a deep understanding of
-          programming concepts and algorithms, and I am passionate about using these skills to solve complex
-          problems. Web development has offered me an engaging challenge to continually learn and improve my
-          skills in creating high-quality applications. I am eager to gain practical experience and contribute
-          to dynamic projects and continue learning in a professional environment.</p>
-      <div class="titles">
-        <p class="links active-link" onclick="openLink('skills')">Skills</p>
-        <p class="links" onclick="openLink('education')">Education</p>
-      </div>
-      <div class="content active-content" id="skills">
-        <ul>
-          <li><span>Front-End</span><br> HTML, CSS, JavaScript, React.js, Redux, Bootstrap, JQuery</li>
-          <li><span>Back-End</span><br>Django, Nodejs</li>
-          <li><span>Database</span><br>MySQL </li>
-          <li><span>Control</span><br> Git, GitHub</li>
-          <li><span>Programming Language</span><br> Python, C language</li>
-        </ul>
-      </div>
-      <div class="content" id="education">
-        <ul>
-          <li><span>2022</span><br>KRG GIRLS COLLEGE BCOM<span class="cgpa"> 6.9 CGPA</span></li>
-          <li><span>2020</span><br>Makhanlal Chaturvedi National University Of Journalism And Communication, Bhopal
-            Diploma In Computer Applications <span class="cgpa"> 8.50 CGPA</span></li>
-          <li><span>2019</span><br>CBSE BOARD 12th<span class="cgpa"> 9.0 CGPA</span></li>
-          <li><span>2017</span><br>CBSE BOARD 10th<span class="cgpa"> 9.6 CGPA</span></li>
-        </ul>
       </div>
     </div>
   </div>
-  
- <!-----------------------End of Home section--------------------------------------------------------->
+
+
+  <!-----------------------End of Home section--------------------------------------------------------->
+ 
+  <!-----------------------Start of About section--------------------------------------------------------->
+  <div id="about">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <p>I am a highly motivated, passionate and self- taught full stack developer, seeking an entry-level position
+        to leverage my skills in front-end and back-end development. I possess a deep understanding of
+        programming concepts and algorithms, and I am passionate about using these skills to solve complex
+        problems. Web development has offered me an engaging challenge to continually learn and improve my
+        skills in creating high-quality applications. I am eager to gain practical experience and contribute
+        to dynamic projects and continue learning in a professional environment.</p>
+    </div>
+  </div>
+
+<!-----------------------End of About section--------------------------------------------------------->
+ 
+
+  <!----------------------------------Skill Section Starts--------------------------------------------------------------->
+
+  <div id="skills">
+    <div class="container">
+      <h1 class="title">Skills</h1>
+      <div class="icons">
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+        </div>
+        <div class="imgicon" >
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+        </div>
+        <div class="imgicon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-----------------------End of Skill section--------------------------------------------------------->
 
   <!-----------------------Start of Portfolio section--------------------------------------------------------->
   <div id="portfolio">
@@ -112,13 +146,13 @@
           <img src="Images/Medassist.png" alt="MedAssist">
           <div class="link">
             <h3>MedAssist App</h3>
-            <p>Our advanced online clinical checkup app enable users to consult with their respective doctor from 
+            <p>Our advanced online clinical checkup app enable users to consult with their respective doctor from
               the
               comfort of their home.</p>
             <a href="https://github.com/Mrinmayee-Sarkar/MedAssist-App" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <button id="rdmore1">Read More</button>
-            
+            <button id="rdmore1">Read More</button>
+
           </div>
         </div>
         <div id="myModal1" class="modal">
@@ -127,31 +161,31 @@
           <div class="modal-content">
             <span class="close1">&times;</span>
             <h2>MedAssist- App</h2>
-            <p>• Developed an advanced and innovative online clinical check-up app to enhance accessibility and 
-              efficiency in healthcare services which will enable users to consult with their respective doctor 
+            <p>• Developed an advanced and innovative online clinical check-up app to enhance accessibility and
+              efficiency in healthcare services which will enable users to consult with their respective doctor
               from the comfort of their home. </p>
             <p> • Technologies and tools used: React.js, React Redux, Material UI and CSS for the frontend, Django
-               for handling server-side    operations and MYSQL database for data storage, ensuring a seamless
-                and responsive user interface.</p>
-              <p> •	Implemented a user-friendly and accessible interface for users to schedule their appointment with
-               the doctors of different specialities, conduct, and review clinical checkups and doctors can 
-               diagnose and prescribe treatment as per need based on the questionnaires given by the doctor 
-               to the patients.</p>
-              <p> •	User authentication and authorization are managed in this application.</p>
-              </p>
+              for handling server-side operations and MYSQL database for data storage, ensuring a seamless
+              and responsive user interface.</p>
+            <p> • Implemented a user-friendly and accessible interface for users to schedule their appointment with
+              the doctors of different specialities, conduct, and review clinical checkups and doctors can
+              diagnose and prescribe treatment as per need based on the questionnaires given by the doctor
+              to the patients.</p>
+            <p> • User authentication and authorization are managed in this application.</p>
+            </p>
           </div>
-        
+
         </div>
         <div class="project">
           <img src="Images/TextCrafty.png" alt="TextCrafty">
           <div class="link">
             <h3>Text Crafty App</h3>
             <p>Our advanced text enhancer app is designed to enhance your writing effortlessly, making every
-               word count.
+              word count.
             </p>
             <a href="https://github.com/Mrinmayee-Sarkar/Text-Crafty" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <button id="rdmore2">Read More</button>
+            <button id="rdmore2">Read More</button>
           </div>
         </div>
 
@@ -162,14 +196,14 @@
             <span class="close2">&times;</span>
             <h2>Text Crafty App </h2>
             <p>• This application is a user-friendly text enhancer developed using react. </p>
-            <p> •	Technologies and tools used: JavaScript, Bootstrap and CSS    to create an innovative text 
-              enhancer app that enhances user experience through responsive design.</p> 
-            <p>    •	Added feature for user to enhance overall quality of written content, remove extra spaces from
-               sentences, copy the text to clipboard. This app also analyze total words, character count and 
-               how much time takes to read a text.
-              </p>
+            <p> • Technologies and tools used: JavaScript, Bootstrap and CSS to create an innovative text
+              enhancer app that enhances user experience through responsive design.</p>
+            <p> • Added feature for user to enhance overall quality of written content, remove extra spaces from
+              sentences, copy the text to clipboard. This app also analyze total words, character count and
+              how much time takes to read a text.
+            </p>
           </div>
-        
+
         </div>
         <div class="project">
           <img src="Images/newswave.jpeg" alt="NewsWave">
@@ -179,7 +213,7 @@
               updates.</p>
             <a href="https://github.com/Mrinmayee-Sarkar/News-Wave" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <button id="rdmore3">Read More</button>
+            <button id="rdmore3">Read More</button>
           </div>
         </div>
         <div id="myModal3" class="modal">
@@ -189,13 +223,13 @@
             <span class="close3">&times;</span>
             <h2>NewsWave App</h2>
             <p>• Implementing the development of a React-based news aggregator application that leverages the News
-               API to provide users with up-to-date and personalized news content.</p>
-              <p>• Successfully integrated News API to fetch and display current news articles, ensuring up-to-date
-               and relevant content for users.</p>
-               <p> • Technologies and tools used: ReactJS, JavaScript, CSS, Bootstrap for frontend user interface.</p>
-                <p>  • Continuously enhancing the application by working on features like real-time updates, improved 
+              API to provide users with up-to-date and personalized news content.</p>
+            <p>• Successfully integrated News API to fetch and display current news articles, ensuring up-to-date
+              and relevant content for users.</p>
+            <p> • Technologies and tools used: ReactJS, JavaScript, CSS, Bootstrap for frontend user interface.</p>
+            <p> • Continuously enhancing the application by working on features like real-time updates, improved
               search functionality, and additional customization options to meet evolving user expectations.</p>
-              </p>
+            </p>
           </div>
         </div>
         <div class="project">
@@ -205,7 +239,7 @@
             <p>Designed and implemented a comprehensive Retirement Dashboard UI from scratch</p>
             <a href="https://mrinmayee-sarkar.github.io/Dashboard/" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <button id="rdmore4">Read More</button>
+            <button id="rdmore4">Read More</button>
           </div>
         </div>
         <div id="myModal4" class="modal">
@@ -216,21 +250,21 @@
             <h2>Retirement Savings Account Dashboard</h2>
             <p>• Designed and implemented a comprehensive Retirement Admin Dashboard user interface from scratch,
               using a combination of HTML, CSS, and JavaScript. This project aimed to streamline retirement account
-               management for users by providing an intuitive and efficient dashboard.</p>
-             <p> • Implemented responsive design principles, ensuring the dashboard adapts seamlessly to various
-               devices and screen sizes, enhancing accessibility for users on different platforms.</p>
-              <p> • Source Code
-               https://github.com/Mrinmayee-Sarkar/Dashboard
-              </p>
+              management for users by providing an intuitive and efficient dashboard.</p>
+            <p> • Implemented responsive design principles, ensuring the dashboard adapts seamlessly to various
+              devices and screen sizes, enhancing accessibility for users on different platforms.</p>
+            <p> • Source Code
+              https://github.com/Mrinmayee-Sarkar/Dashboard
+            </p>
           </div>
-        
+
         </div>
       </div>
     </div>
   </div>
- <!-----------------------End of portfolio section--------------------------------------------------------->
+  <!-----------------------End of portfolio section--------------------------------------------------------->
 
-    <!-----------------------Start of contact section--------------------------------------------------------->
+  <!-----------------------Start of contact section--------------------------------------------------------->
 
   <div id="contact">
     <div class="container">
@@ -257,7 +291,7 @@
       </div>
     </div>
   </div>
-   <!-----------------------End of contact section--------------------------------------------------------->
+  <!-----------------------End of contact section--------------------------------------------------------->
 
 </body>
 
