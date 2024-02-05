@@ -11,7 +11,7 @@ function handleClose() {
 
 /**********************Modals for project description********************************** */
 
-document.addEventListener("DOMContentLoaded",function (){
+
     
 let modal1 = document.getElementById("myModal1")
 let btn1 = document.getElementById("rdmore1")
@@ -23,9 +23,7 @@ btn1.onclick = function() {
 span1.onclick = function() {
   modal1.style.display = "none"
 }
-})
 
-document.addEventListener("DOMContentLoaded",function (){
 let modal2 = document.getElementById("myModal2")
 let btn2 = document.getElementById("rdmore2")
 let span2 = document.getElementsByClassName("close2")[0]
@@ -36,8 +34,8 @@ btn2.onclick = function() {
 span2.onclick = function() {
   modal2.style.display = "none"
 }
-})
-document.addEventListener("DOMContentLoaded",function (){
+
+
 let modal3 = document.getElementById("myModal3")
 let btn3 = document.getElementById("rdmore3")
 let span3 = document.getElementsByClassName("close3")[0]
@@ -49,8 +47,7 @@ span3.onclick = function() {
   modal3.style.display = "none"
 }
 
-})
-document.addEventListener("DOMContentLoaded",function (){
+
 let modal4 = document.getElementById("myModal4")
 let btn4 = document.getElementById("rdmore4")
 let span4 = document.getElementsByClassName("close4")[0]
@@ -61,7 +58,6 @@ btn4.onclick = function() {
 span4.onclick = function() {
   modal4.style.display = "none"
 }
-})
 
 
 window.addEventListener("load", function () {

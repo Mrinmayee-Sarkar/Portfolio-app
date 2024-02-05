@@ -33,6 +33,7 @@ body {
  margin-left: 22vw;
   font-size: 1.6vw;
 animation: animateul 1s ease forwards;
+animation-delay: 0.5s;
 }
 
 @keyframes animateul {
@@ -95,6 +96,7 @@ gap: 2vw;
 
 .socialmedia{
   animation:animatesocialmedia 1s ease forwards;
+  animation-delay: 0.5s;
 }
 .socialmedia img{
   background-color: white;
@@ -149,6 +151,7 @@ img:hover{
 position: relative;
 font-size: 1.6vw;
 animation: animateh 1s ease forwards;
+animation-delay: 0.5s;
 }
 
 
@@ -175,6 +178,7 @@ animation: animateh 1s ease forwards;
   font-weight: bolder;
   position: relative;
   animation: animatespan 1s ease forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes animatespan {
@@ -213,6 +217,7 @@ animation: animateh 1s ease forwards;
 .anime{
   -webkit-animation: anime 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
   animation: anime 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation-delay: 0.5s;
 }
 
 @keyframes anime{
@@ -258,6 +263,7 @@ animation: animateh 1s ease forwards;
   font-weight: 500;
   animation: animatep 1s ease forwards;
   position: relative;
+  animation-delay:0.5s;
 }
 
 @keyframes animatep {
@@ -706,6 +712,7 @@ form .btn {
 .anime{
   -webkit-animation: anime 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
   animation: anime 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation-delay:0.5s;
 }
 
 @keyframes anime{

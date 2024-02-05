@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mrinmayee Sarkar-Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="pf.js"></script>
+ 
   <script src="https://kit.fontawesome.com/a83e1a7142.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
@@ -74,9 +75,9 @@
   <!-----------------------Start of About section--------------------------------------------------------->
   <div id="about">
     <div class="container">
-      <h1 class="title">About Me</h1>
-      <p>Hi! My name is Mrinmayee Sarkar</p>
-      <p>I am a highly motivated,dedicated and self- taught full stack developer, with a passion for
+      <h1 class="title" data-aos="fade-up">About Me</h1>
+      <p  data-aos="fade-down">Hi! My name is Mrinmayee Sarkar</p>
+      <p data-aos="fade-down">I am a highly motivated,dedicated and self- taught full stack developer, with a passion for
          crafting seamless and efficient web applications. I possess a deep understanding of
         programming concepts and algorithms, and I am passionate about using these skills to solve complex
         problems. Web development has offered me an engaging challenge to continually learn and improve my
@@ -90,10 +91,13 @@
 
   <!----------------------------------Skill Section Starts--------------------------------------------------------------->
 
-  <div id="skills">
+  <div id="skills" data-aos="fade-up">
     <div class="container">
-      <h1 class="title">Skills</h1>
-      <div class="icons">
+      <h1 class="title" >Skills</h1>
+      <div class="icons"  data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <div class="imgicon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
         </div>
@@ -139,10 +143,13 @@
   <!-----------------------End of Skill section--------------------------------------------------------->
 
   <!-----------------------Start of Portfolio section--------------------------------------------------------->
-  <div id="portfolio">
+  <div id="portfolio" data-aos="fade-up">
     <div class="container">
       <h1 class="title">My Projects</h1>
-      <div class="project-list">
+      <div class="project-list" data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <div class="project">
           <img src="Images/Medassist.png" alt="MedAssist">
           <div class="link">
@@ -267,11 +274,11 @@
 
   <!-----------------------Start of contact section--------------------------------------------------------->
 
-  <div id="contact">
+  <div id="contact" data-aos="fade-down">
     <div class="container">
       <div class="row">
         <div class="left">
-          <h1 class="sub-title">Contact Me</h1>
+          <h1 class="sub-title" >Contact Me</h1>
           <p><i class="fa-solid fa-phone"></i> 9039575229</p>
           <p><i class="fa-solid fa-envelope"></i>mrinmayee.sarkar23@gmail.com</p>
           <a href="https://github.com/Mrinmayee-Sarkar">
@@ -293,6 +300,15 @@
     </div>
   </div>
   <!-----------------------End of contact section--------------------------------------------------------->
+ 
+  <script src="pf.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1500,
+    });
+  </script>
 
 </body>
 
