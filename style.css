@@ -108,11 +108,11 @@ gap: 2vw;
 
 @keyframes animatesocialmedia {
   0%{
-    transform: translateX(-100px);
+    transform: translateY(-100px);
     opacity: 0;
   }
   100%{
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -298,7 +298,9 @@ animation-delay: 0.5s;
   margin-top: 1.69vw;
   width: 50%;
   line-height: 1.5;
-  color:white
+  color:#36454F;
+  background-color:#F2F3F5;
+  padding: 1vw 3vw;
 }
 
 /*********************************Start of Skills Section*****************************************************************/
@@ -556,10 +558,10 @@ height: 6.5;
 form input,
 form textarea {
   width: 100%;
-  color: white;
+  color:black;
   border: 0;
   outline: none;
-  background: black;
+  background: #F2F3F5;
   border-radius: 9px;
   padding: 15px;
   margin: 12px 0;
@@ -576,8 +578,8 @@ form .btn {
   margin-top: 15px;
   cursor: pointer;
   border-radius: 9px;
-  color: black;
-  background:white;
+  color:black;
+  background: #FEFEFA;
 }
 
 /****************************Portfolio for smaller screen*************************************************/
@@ -683,13 +685,13 @@ form .btn {
 }
 .animate span{
   font-size: 2.5vw;
-  margin-top: 0.5vw;
+  margin-top: 0.80vw;
   font-weight: bolder;
 }
 
 .animate ul  {
   list-style: none;
-  font-size: 2.3vw;
+  font-size: 2.5vw;
   margin-left: 1vw;
   
 }
@@ -702,11 +704,13 @@ form .btn {
 }
 
 
+
+
 .animate div{
   overflow: hidden;
   position: relative;
   height: 5vw;
-  margin-top: -0.65vw;
+  margin-top: -2vw;
 }
 
 .anime{
@@ -774,7 +778,7 @@ form .btn {
     margin-top: 1.69vw;
     width: 100%;
     line-height: 1.5;
-    color:beige;
+    color:black;
   }
 
   .links {
