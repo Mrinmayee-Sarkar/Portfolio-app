@@ -580,6 +580,8 @@ form .btn {
   border-radius: 9px;
   color:black;
   background: #FEFEFA;
+  border: none;
+  margin-bottom: 2vw;
 }
 
 /****************************Portfolio for smaller screen*************************************************/
@@ -604,50 +606,10 @@ form .btn {
     width: 25vw;
   }
 
-  .menuicon{
-    display: block;
-    font-size: 20px;
-    float: right;
-    margin-top: -7vw;
-  }
-  
-  .menuicon i {
-    display: block;
-    font-size: 20px;
-    float: right;
-   font-size: 5vw;
+ #menu {
+    display: none;
   }
 
-  nav ul {
-    background: #4b4b4b;
-    position: fixed;
-    top: 0;
-    right: -65vw;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-
- nav ul .fa-solid {
-    display: block;
-    position: absolute;
-    top: 6vw;
-    left: 9vw;
-    cursor: pointer;
-    font-size: 5vw;
-  }
-
-   .li{
-    margin-top: 16vw;
-    margin-left: -15vw;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-  }
- .li a{
-    font-size: 4vw;
-  }
 
   .socialmedia{
     display: none;
@@ -781,40 +743,35 @@ form .btn {
     color:black;
   }
 
-  .links {
-    margin-right: 3.25vw;
-    font-size: 1.6vw;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
+  .icons{
+    margin-top: 4vw;
+    display: flex;
+    gap: 1.5vw;
+    flex-wrap: wrap;
+  }
+  
+  .icons .imgicon{
+    width: 12vw;
+    height: 9vw;
+    background-color: aliceblue;
+   border-radius: 4%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  }
+  
+  .icons img{
+  width: 8vw;
+  height: 8vw;
+  transition: all;
+  }
+  
+  .imgicon:hover{
+  width: 14vw ;
+  height: 14vw;
   }
 
-  .links.active-link::after {
-    width: 20%;
-  }
-  
-  .content ul li {
-    margin-top: 1.5vw;
-    font-weight: bold;
-    font-size: 2.5vw;
-    
-  }
-  
-  .content ul li span {
-    color: bisque;
-    font-size: 2.5vw;
-  }
-  
-  .cgpa{
-    margin-left: 1vw;}
-  
-  .content {
-    display: none;
-  }
-  
-  .content.active-content {
-    display: block;
-  }
 
   .project-list {
     display: grid;
@@ -1007,10 +964,10 @@ form .btn {
   form input,
   form textarea {
     width: 90%;
-    color: white;
+    color: black;
     border: 0;
     outline: none;
-    background: black;
+    background: #F2F3F5;
     border-radius: 9px;
     padding: 15px;
     margin: 12px 0;
@@ -1019,12 +976,14 @@ form .btn {
 
   form .btn {
     padding: 14px 60px;
+    margin-bottom: 2vw;
     font-size: 2.9vw;
     margin-top: 15px;
     cursor: pointer;
     border-radius: 9px;
     color: black;
-    background: white
+    background: white;
+    border: none;
   }
  
 }

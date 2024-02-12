@@ -1,14 +1,3 @@
-function handleMenu() {
-    let menu = document.getElementById("menu")
-    menu.style.right = "0"
-
-}
-
-function handleClose() {
-    let menu = document.getElementById("menu")
-    menu.style.right = "-65vw"
-}
-
 /**********************Modals for project description********************************** */
 
 
