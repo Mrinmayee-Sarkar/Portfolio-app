@@ -278,10 +278,6 @@ animation-delay: 0.5s;
   
 }
 
-.text p span{
-  color: #ff004f;
-}
-
 .text div {
   font-size: 4.1vw;
   font-weight: bolder;
@@ -600,6 +596,11 @@ form .btn {
     display: block;
     padding: 2.5vw;
   }
+
+ .container {
+    padding: 0.65vw 10%;
+  }
+
   .logo {
     font-size: 5vw;
     font-family: "Pacifico", cursive;
@@ -768,8 +769,8 @@ form .btn {
   }
   
   .imgicon:hover{
-  width: 14vw ;
-  height: 14vw;
+  width: 10vw ;
+  height: 10vw;
   }
 
 
