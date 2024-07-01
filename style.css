@@ -1101,9 +1101,10 @@ color: white;
   }
   
   .contact .getin-touch{
-    font-size: 8vw;
+    font-size: 3vw;
     font-weight: bold;
-    width: 70vw;
+    width: 30vw;
+    margin-left: 5vw;
     
     margin-top: 6vw;
 
