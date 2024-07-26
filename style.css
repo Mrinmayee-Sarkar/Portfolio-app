@@ -721,332 +721,188 @@ section,
   # Portfolio Section
   --------------------------------------------------------------*/
 
-.projects {
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-}
-
-.work-sample {
-  background-color: #1A2421;
-  height: 80vh;
-  border-radius: 20px;
-  padding: 3vh;
-  margin: 5px 25px 5px 25px;
-
-}
-
-
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16.27vw, 1fr));
-  grid-gap: 2.60vw;
-  margin-top: 3vw;
-}
-
-.project {
-  position: relative;
-  overflow: hidden;
-}
-
-.project img {
-  width: 85%;
-  height: 90%;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.link {
-  width: 90%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 2.60vw;
-  text-align: center;
-  font-size: 0.97vw;
-  transition: height 0.5s;
-}
-
-
-.project:hover .link {
-  height: 10%;
-}
-
-.link div {
-  font-weight: bold;
-  margin-bottom: 0.1vw;
-  font-size: 1vw;
-  color: whitesmoke;
-}
-
-.link p {
-  font-size: 0.7vw;
-  color: white;
-}
-
-.link a {
-  text-decoration: none;
-  font-size: 0.8vw;
-  background: white;
-  width: 2vw;
-  height: 2vw;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.link a i {
-  color: #ff004f;
-
-}
-
-.link button {
-  color: whitesmoke;
-  margin-top: 1.30vw;
-  background-color: black;
-  justify-content: center;
-  align-items: center;
-  width: 6vw;
-  padding: 0.2vw;
-  border-radius: 5%;
-  font-size: 0.75vw;
-}
-
-.project:hover img {
-  transform: scale(1.1);
-}
-
-.project:hover .link {
-  height: 100%;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 11vw;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: black;
-  margin: 15% auto;
-  padding: 1.30vw;
-  border: 1px solid #888;
-  width: 60%;
-  height: auto;
-}
-
-.modal-content h2 {
-  color: white;
-}
-
-.modal-content p {
-  line-height: 2vw;
-  color: white;
-}
-
-/* The Close Button */
-.close1 {
-  color: whitesmoke;
-  float: right;
-  font-size: 1.82vw;
-  font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus {
-  color: beige;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close2 {
-  color: whitesmoke;
-  float: right;
-  font-size: 1.82vw;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: beige;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close3 {
-  color: whitesmoke;
-  float: right;
-  font-size: 1.82vw;
-  font-weight: bold;
-}
-
-.close3:hover,
-.close3:focus {
-  color: beige;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close4 {
-  color: whitesmoke;
-  float: right;
-  font-size: 1.82vw;
-  font-weight: bold;
-}
-
-.close4:hover,
-.close4:focus {
-  color: beige;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media (max-width: 1024px) {
+  .projects {
+    --background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  }
+  
   .work-sample {
-    height: auto;
+    background-color: #1A2421;
+    padding: 3vh;
+    margin: 5px 25px;
+    border-radius: 20px;
   }
-
-  .modal-content {
-    width: 70%;
-  }
-}
-
-
-@media (max-width: 768px) {
+  
   .project-list {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 2.60vw;
+    margin-top: 3vw;
   }
-
-  .link {
-    font-size: 12px;
+  
+  .project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
   }
-
-  .para {
-    display: none;
-  }
-
-  .link div {
-    font-size: 4vw;
-  }
-
-
-
-  .link a {
-    width: 6vw;
-    height: 6vw;
-    font-size: 4vw;
-  }
-
-  .link button {
-    width: 20vw;
-    padding: 2vw;
-    font-size: 3vw;
-    margin-top: 50px;
-  }
-
-  .modal-content h2 {
-    font-size: 20px;
-  }
-
-  .modal-content p {
-    font-size: 20px;
-    line-height: 5vw;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 5vw;
-    bottom: 0;
+  
+  .project img {
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
   }
-
-  .modal-content {
-    width: 90%;
-    margin: 20% 0;
-    padding: 5vw;
+  
+  .link {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+    text-align: center;
+    transition: height 0.5s;
   }
-
-  .close1,
-  .close2,
-  .close3,
-  .close4 {
-    font-size: 5vw;
+  
+  .project:hover img {
+    transform: scale(1.1);
   }
-}
-
-
-@media (max-width: 480px) {
-  .work-sample {
-    padding: 2vh;
-    margin: 5px 10px;
+  
+  .project:hover .link {
+    height: 100%;
   }
-
-  .project-list {
-    grid-template-columns: 1fr;
-  }
-
+  
   .link div {
-    font-size: 6vw;
-    margin-bottom: -20px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: whitesmoke;
   }
-
-
-
+  
+  .link p {
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 1em;
+  }
+  
   .link a {
-    width: 6vw;
-    height: 6vw;
-    font-size: 4vw;
-    margin-top: 15px;
-    
+    text-decoration: none;
+    font-size: 1em;
+    background: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
   }
-
+  
+  .link a i {
+    color: #ff004f;
+  }
+  
   .link button {
-    width: 15vw;
-    padding: 1vw;
-    font-size: 2vw;
-    margin-bottom: 10px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
   }
-
-  .modal-content {
-    width: 90%;
-    padding: 15px;
-    margin: 20% auto;
+  
+  @media (max-width: 1024px) {
+    .project-list {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-auto-rows: 220px;
+      grid-gap: 2vw;
+    }
+  
+    .link div {
+      font-size: 1.1em;
+    }
+  
+    .link p {
+      font-size: 0.85em;
+    }
+  
+    .link button {
+      font-size: 0.85em;
+    }
   }
-
-  .modal-content h2 {
-    font-size: 18px;
+  
+  @media (max-width: 768px) {
+    .project-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: 200px;
+    }
+  
+    .link div {
+      font-size: 1em;
+    }
+  
+    .link p {
+      font-size: 0.8em;
+    }
+  
+    .link button {
+      font-size: 0.8em;
+    }
   }
-
-  .modal-content p {
-    font-size: 12px;
+  
+  @media (max-width: 480px) {
+    .work-sample {
+      padding: 2vh;
+      margin: 5px 10px;
+    }
+  
+    .project-list {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 250px;
+      grid-gap: 20px;
+    }
+  
+    .project {
+      height: 250px;
+    }
+  
+    .link {
+      height: 0;
+      transition: height 0.3s ease;
+    }
+  
+    .project:hover .link,
+    .project:active .link {
+      height: 100%;
+    }
+  
+    .link div {
+      font-size: 1.1em;
+      margin-bottom: 0.3em;
+    }
+  
+    .link p {
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+    }
+  
+    .link a {
+      margin-bottom: 0.5em;
+    }
+  
+    .link button {
+      font-size: 0.8em;
+      padding: 0.4em 0.8em;
+    }
   }
-
-  .close1,
-  .close2,
-  .close3,
-  .close4 {
-    font-size: 24px;
-  }
-}
-
 
 /*--------------------------------------------------------------
   # Contact Section
