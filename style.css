@@ -844,6 +844,11 @@ section,
   position: relative;
 }
 
+.modal-content h2{
+  color: white;
+  font-size: 20px;
+}
+
 .close1, .close2, .close3, .close4 {
   color: whitesmoke;
   float: right;
